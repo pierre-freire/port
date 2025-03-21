@@ -74,11 +74,6 @@ function ContactForm() {
         setIsSubmitting(false);
         setFormData({ name: "", email: "", message: "" });
       } catch (err) {
-        if (err) {
-          console.log("EMAILJS FAILED...", err);
-          return;
-        }
-
         console.log("ERROR", err);
       }
     }
