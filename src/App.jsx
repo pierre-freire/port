@@ -1,6 +1,9 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
-import ProjectCard from "./components/ProjectCard"
-import ContactForm from "./components/ContactForm"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import ProjectCard from "./components/ProjectCard";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -13,13 +16,22 @@ function App() {
             </a>
           </div>
           <nav className="flex items-center space-x-1">
-            <a href="#about" className="px-4 py-2 text-sm font-medium hover:text-blue-400">
+            <a
+              href="#about"
+              className="px-4 py-2 text-sm font-medium hover:text-blue-400"
+            >
               About
             </a>
-            <a href="#projects" className="px-4 py-2 text-sm font-medium hover:text-blue-400">
+            <a
+              href="#projects"
+              className="px-4 py-2 text-sm font-medium hover:text-blue-400"
+            >
               Projects
             </a>
-            <a href="#contact" className="px-4 py-2 text-sm font-medium hover:text-blue-400">
+            <a
+              href="#contact"
+              className="px-4 py-2 text-sm font-medium hover:text-blue-400"
+            >
               Contact
             </a>
           </nav>
@@ -35,7 +47,8 @@ function App() {
                   Hi, I'm <span className="text-blue-400">Pierre Freire</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
-                  I'm a web developer specializing in building exceptional digital experiences.
+                  I'm a web developer specializing in building exceptional
+                  digital experiences.
                 </p>
               </div>
               <div className="space-x-4">
@@ -43,7 +56,11 @@ function App() {
                   href="#projects"
                   className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
-                  View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                  View My Work{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="ml-2 h-4 w-4"
+                  />
                 </a>
                 <a
                   href="#contact"
@@ -56,15 +73,21 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+        <section
+          id="about"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-800"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  About Me
+                </h2>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
-                  I'm a passionate web developer with a focus on creating clean, user-friendly websites and
-                  applications. With expertise in React and modern web technologies, I build solutions that are both
-                  beautiful and functional.
+                  I'm a passionate web developer with a focus on creating clean,
+                  user-friendly websites and applications. With expertise in
+                  React and modern web technologies, I build solutions that are
+                  both beautiful and functional.
                 </p>
               </div>
               <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12">
@@ -88,7 +111,8 @@ function App() {
                   </div>
                   <h3 className="text-xl font-bold">Frontend Development</h3>
                   <p className="text-sm text-gray-400">
-                    Creating responsive and interactive user interfaces with React.
+                    Creating responsive and interactive user interfaces with
+                    React.
                   </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2">
@@ -109,7 +133,9 @@ function App() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold">UI/UX Design</h3>
-                  <p className="text-sm text-gray-400">Designing intuitive and visually appealing user experiences.</p>
+                  <p className="text-sm text-gray-400">
+                    Designing intuitive and visually appealing user experiences.
+                  </p>
                 </div>
                 <div className="flex flex-col items-center space-y-2">
                   <div className="rounded-full bg-blue-900 p-4">
@@ -133,7 +159,9 @@ function App() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold">Backend Integration</h3>
-                  <p className="text-sm text-gray-400">Connecting frontend applications with APIs and databases.</p>
+                  <p className="text-sm text-gray-400">
+                    Connecting frontend applications with APIs and databases.
+                  </p>
                 </div>
               </div>
             </div>
@@ -144,8 +172,12 @@ function App() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">My Projects</h2>
-                <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">Check out some of my recent work.</p>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  My Projects
+                </h2>
+                <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
+                  Check out some of my recent work.
+                </p>
               </div>
               <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12">
                 <ProjectCard
@@ -177,23 +209,42 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+        <section
+          id="contact"
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-800"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get In Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Get In Touch
+                </h2>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
-                  Have a project in mind or want to collaborate? Feel free to reach out!
+                  Have a project in mind or want to collaborate? Feel free to
+                  reach out!
                 </p>
               </div>
               <div className="mx-auto grid w-full max-w-3xl gap-6 md:grid-cols-2">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-6 w-6 text-blue-400" />
-                    <span>pierrefreire.profis@gmail.com</span>
+                    <FontAwesomeIcon
+                      icon={faEnvelope}
+                      className="h-6 w-6 text-blue-400"
+                    />
+                    <a
+                      href="mailto:pierrefreire.profis@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-blue-400"
+                    >
+                      pierrefreire.profis@gmail.com
+                    </a>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Linkedin className="h-6 w-6 text-blue-400" />
+                    <FontAwesomeIcon
+                      icon={faLinkedin}
+                      className="h-6 w-6 text-blue-400"
+                    />
                     <a
                       href="https://linkedin.com/in/pierre-freire"
                       target="_blank"
@@ -204,7 +255,10 @@ function App() {
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Github className="h-6 w-6 text-blue-400" />
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      className="h-6 w-6 text-blue-400"
+                    />
                     <a
                       href="https://github.com/pierre-freire"
                       target="_blank"
@@ -228,24 +282,40 @@ function App() {
             © {new Date().getFullYear()} Pierre Freire. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5 text-gray-400 hover:text-blue-400" />
+            <a
+              href="https://github.com/pierre-freire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="h-5 w-5 text-gray-400 hover:text-blue-400"
+              />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-5 w-5 text-gray-400 hover:text-blue-400" />
+            <a
+              href="https://linkedin.com/in/pierre-freire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="h-5 w-5 text-gray-400 hover:text-blue-400"
+              />
               <span className="sr-only">LinkedIn</span>
             </a>
             <a href="mailto:pierrefreire.profis@gmail.com">
-              <Mail className="h-5 w-5 text-gray-400 hover:text-blue-400" />
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="h-5 w-5 text-gray-400 hover:text-blue-400"
+              />
               <span className="sr-only">Email</span>
             </a>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
