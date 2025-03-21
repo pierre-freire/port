@@ -32,7 +32,7 @@ function App() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Hi, I'm <span className="text-blue-400">Your Name</span>
+                  Hi, I'm <span className="text-blue-400">Pierre Freire</span>
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
                   I'm a web developer specializing in building exceptional digital experiences.
@@ -190,28 +190,28 @@ function App() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="h-6 w-6 text-blue-400" />
-                    <span>your.email@example.com</span>
+                    <span>pierrefreire.profis@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Linkedin className="h-6 w-6 text-blue-400" />
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://linkedin.com/in/pierre-freire"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-blue-400"
                     >
-                      linkedin.com/in/yourusername
+                      linkedin.com/in/pierre-freire
                     </a>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Github className="h-6 w-6 text-blue-400" />
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/pierre-freire"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-blue-400"
                     >
-                      github.com/yourusername
+                      github.com/pierre-freire
                     </a>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ function App() {
       <footer className="w-full border-t border-gray-800 py-6 md:py-0">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:h-16 md:flex-row">
           <p className="text-center text-sm leading-loose text-gray-400 md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Pierre Freire. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
@@ -236,7 +236,7 @@ function App() {
               <Linkedin className="h-5 w-5 text-gray-400 hover:text-blue-400" />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="mailto:your.email@example.com">
+            <a href="mailto:pierrefreire.profis@gmail.com">
               <Mail className="h-5 w-5 text-gray-400 hover:text-blue-400" />
               <span className="sr-only">Email</span>
             </a>
